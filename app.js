@@ -28,7 +28,29 @@ if(page=="community"){
  <button onclick="write()">글쓰기</button>
  <div id="plist"></div>
  `;
- renderPosts();
+div.innerHTML += `
+<div class="feed-card">
+
+ <div class="feed-header">
+   <img src="${p.user.img}">
+   <div>
+     <b>${p.user.name}</b>
+     ${p.user.role=="artist"?"<span class='badge'>ARTIST</span>":""}
+   </div>
+ </div>
+
+ <div>${p.text}</div>
+
+ ${p.img?`<img src="${p.img}" class="feed-img">`:""}
+
+ <div style="margin-top:10px">
+   <button onclick="like(${p.id})">🤍 ${p.likes}</button>
+   <button onclick="openDM('${p.user.name}')">DM</button>
+ </div>
+
+</div>
+`;
+
 }
 
 if(page=="profile"){
