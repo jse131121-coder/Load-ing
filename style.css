@@ -1,9 +1,95 @@
-body{background:#0b0b0b;color:white;font-family:sans-serif;margin:0}
-.nav{position:fixed;bottom:0;width:100%;display:flex;justify-content:space-around;background:#111;padding:10px}
-.post{background:#151515;padding:10px;margin:10px;border-radius:12px}
-.story{display:inline-block;margin:5px;text-align:center}
-.story img{width:60px;height:60px;border-radius:50%}
-.badge{color:#4fc3ff}
-.chatbox{height:350px;overflow:auto;border:1px solid #333;margin:10px;padding:10px}
-.msgme{text-align:right}
-.msgother{text-align:left}
+body{
+ background:#0f0f10;
+ color:white;
+ font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+ margin:0;
+}
+
+.top{
+ position:fixed;
+ top:0;
+ width:100%;
+ height:55px;
+ background:#0f0f10;
+ border-bottom:1px solid #222;
+ display:flex;
+ align-items:center;
+ padding-left:15px;
+ font-weight:700;
+ letter-spacing:1px;
+}
+
+#screen{
+ padding-top:65px;
+ padding-bottom:70px;
+}
+
+.story-wrap{
+ display:flex;
+ overflow-x:auto;
+ padding:10px;
+}
+
+.story{
+ text-align:center;
+ margin-right:14px;
+}
+
+.story img{
+ width:64px;
+ height:64px;
+ border-radius:50%;
+ border:2px solid #4fc3ff;
+}
+
+.feed-card{
+ background:#18181a;
+ border-radius:18px;
+ margin:14px;
+ padding:14px;
+ box-shadow:0 0 0 1px #222;
+}
+
+.feed-header{
+ display:flex;
+ align-items:center;
+ gap:10px;
+ margin-bottom:10px;
+}
+
+.feed-header img{
+ width:38px;
+ height:38px;
+ border-radius:50%;
+}
+
+.badge{
+ color:#4fc3ff;
+ font-size:12px;
+ margin-left:5px;
+}
+
+.feed-img{
+ width:100%;
+ border-radius:14px;
+ margin-top:10px;
+}
+
+.bottom{
+ position:fixed;
+ bottom:0;
+ width:100%;
+ height:60px;
+ background:#121213;
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ border-top:1px solid #222;
+}
+
+.bottom button{
+ background:none;
+ border:none;
+ color:white;
+ font-size:22px;
+}
