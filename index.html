@@ -8,13 +8,25 @@
 </head>
 <body>
 
-<header class="top">
+<header class="header">
   <div class="logo">LOYD</div>
+  <div class="header-icons">
+    🔔
+    ✉️
+  </div>
 </header>
 
-<div id="screen"></div>
+<div id="screen">
 
-<nav class="bottom">
+  <!-- STORIES -->
+  <div class="stories" id="stories"></div>
+
+  <!-- FEED -->
+  <div id="feed"></div>
+
+</div>
+
+<nav class="tabbar">
   <button onclick="show('home')">🏠</button>
   <button onclick="show('community')">💬</button>
   <button onclick="show('dm')">✉️</button>
